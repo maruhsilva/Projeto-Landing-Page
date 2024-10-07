@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Vendas</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Loja de Exemplos</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="carrinho.html">Carrinho</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <h2>Nossos Produtos</h2>
+        <div class="products">
+            <div class="product">
+                <a href="produto.html?id=1"><img src="img/produto1.jpg" alt="Produto 1"></a>
+                <h3>Produto 1</h3>
+                <p>Descrição do produto 1.</p>
+                <button onclick="adicionarAoCarrinho(1)">Comprar</button>
+            </div>
+            <div class="product">
+                <a href="produto.html?id=2"><img src="img/produto2.jpg" alt="Produto 2"></a>
+                <h3>Produto 2</h3>
+                <p>Descrição do produto 2.</p>
+                <button onclick="adicionarAoCarrinho(2)">Comprar</button>
+            </div>
+            <div class="product">
+                <a href="produto.html?id=3"><img src="img/produto3.jpg" alt="Produto 3"></a>
+                <h3>Produto 3</h3>
+                <p>Descrição do produto 3.</p>
+                <button onclick="adicionarAoCarrinho(3)">Comprar</button>
+            </div>
+            <div class="product">
+                <a href="produto.html?id=4"><img src="img/produto4.jpg" alt="Produto 4"></a>
+                <h3>Produto 4</h3>
+                <p>Descrição do produto 4.</p>
+                <button onclick="adicionarAoCarrinho(4)">Comprar</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Loja de Exemplos</p>
+        </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
