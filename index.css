@@ -160,7 +160,8 @@ body .home {
 }
 
 .home article h1 {
-    font-size: 10rem;
+    padding-top: 8rem;
+    font-size: 8rem;
 }
 
 .home article p {
@@ -263,7 +264,7 @@ body .intervalo {
 }
 
 .intervalo h1 {
-    font-size: 12rem;
+    font-size: 8rem;
     color: transparent;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     -webkit-text-stroke: 5px black;
@@ -293,15 +294,21 @@ body .servicos {
     max-width: 100%;
     min-height: 100vh;
     background-color: beige;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .content {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
     height: 600px;
     width: 935px;
     border-radius: 20px;
     overflow: hidden;
     position: absolute;
-    left: 25%;
+    /* left: 25%; */
     padding-top: 5%;
     /* transform: translate(-50%, -50%); */
 }
@@ -489,3 +496,96 @@ footer aside h6 {
     font-size: .91rem;
 }
 
+@media (max-width: 720px) {
+    
+    body .home {
+        background-size: cover;
+    }
+
+    #nav {
+        background-image: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: beige ;
+    }
+
+    #nav a {
+        font-size: 1rem;
+        
+    }
+
+    .search {
+        display: none;
+    }
+
+    .sobre {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom: 3rem;
+    }
+
+    .home article {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .home article p {
+        font-size: 1.1rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: white;
+        /* padding: 10%; */
+        max-width: 100%;
+        /* background-color: hsl(60, 56%, 91%); */
+        /* text-align: center; */
+    }
+
+    .h1-sobre {
+        font-size: 6rem;
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        color: hsl(0, 0%, 0%, .4);
+    }
+
+    .sobre article  {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+
+    body .intervalo {
+        max-width: 100%;
+        background-size: cover;
+    }
+
+    .intervalo h1 {
+        font-size: 4rem;
+    }
+
+    .servicos h1 {
+        font-size: 4rem;
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        color: hsl(0, 0%, 0%, .6);
+    }
+
+    .contato h1 {
+        font-size: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: hsl(0, 0%, 0%, .6);
+    }
+
+    .content {
+        max-width: 100%;
+        height: 70vh;
+        /* padding: 2rem; */
+    }
+}
